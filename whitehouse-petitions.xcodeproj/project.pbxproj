@@ -12,6 +12,8 @@
 		F96F09F31D9565C4008CDD59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96F09F11D9565C4008CDD59 /* Main.storyboard */; };
 		F96F09F51D9565C4008CDD59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F96F09F41D9565C4008CDD59 /* Assets.xcassets */; };
 		F96F09F81D9565C4008CDD59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96F09F61D9565C4008CDD59 /* LaunchScreen.storyboard */; };
+		F9BB83121D9CA9140021F2DA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BB83111D9CA9140021F2DA /* DetailViewController.swift */; };
+		F9DDFDA01D9BFCA90047FD8D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DDFD9F1D9BFCA90047FD8D /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F96F09F41D9565C4008CDD59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F96F09F71D9565C4008CDD59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F96F09F91D9565C4008CDD59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9BB83111D9CA9140021F2DA /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F9DDFD9F1D9BFCA90047FD8D /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				F96F09F41D9565C4008CDD59 /* Assets.xcassets */,
 				F96F09F61D9565C4008CDD59 /* LaunchScreen.storyboard */,
 				F96F09F91D9565C4008CDD59 /* Info.plist */,
+				F9DDFD9F1D9BFCA90047FD8D /* SwiftyJSON.swift */,
+				F9BB83111D9CA9140021F2DA /* DetailViewController.swift */,
 			);
 			path = "whitehouse-petitions";
 			sourceTree = "<group>";
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9DDFDA01D9BFCA90047FD8D /* SwiftyJSON.swift in Sources */,
 				F96F09F01D9565C4008CDD59 /* ViewController.swift in Sources */,
 				F96F09EE1D9565C4008CDD59 /* AppDelegate.swift in Sources */,
+				F9BB83121D9CA9140021F2DA /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +305,7 @@
 				F96F09FE1D9565C4008CDD59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
