@@ -15,6 +15,10 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        performSelector(inBackground: #selector(fetchJSON), with: nil)
+    }
+    
+    func fetchJSON() {
         let urlString: String
         
         if navigationController?.tabBarItem.tag == 0 {
@@ -28,16 +32,13 @@ class ViewController: UITableViewController {
                 let json = JSON(data: data)
                 
                 if json["metadata"]["responseInfo"]["status"].intValue == 200 {
-                    parse(json: json)
-                } else {
-                    showError()
+                    self.parse(json: json)
+                    return
                 }
-            } else {
-                showError()
             }
-        } else {
-            showError()
         }
+        
+        performSelector(onMainThread: #selector(showError), with: nil, waitUntilDone: false)
     }
     
     func parse(json: JSON) {
@@ -49,7 +50,7 @@ class ViewController: UITableViewController {
             petitions.append(obj)
         }
         
-        tableView.reloadData()
+        tableView.performSelector(onMainThread: #selector(UITableView.reloadData), with: nil, waitUntilDone: false)
     }
     
     func showError() {
